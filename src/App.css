@@ -1,0 +1,19 @@
+.app-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .app-heading {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    font-family: Arial, sans-serif; /* Updated font to Arial */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
