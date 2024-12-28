@@ -11,7 +11,7 @@
     left: 50%;
     transform: translateX(-50%);
     font-size: 40px;
-    font-family: Arial, sans-serif; /* Updated font to Arial */
+    font-family: Arial, sans-serif; 
     font-weight: bold;
     color: #333;
     text-align: center;
