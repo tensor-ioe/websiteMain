@@ -14,6 +14,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Bahnschrift';
+  scroll-behavior: smooth; /* for smooth scrolling when a component is mounted*/
 }
 *::-webkit-scrollbar{
   display: none;

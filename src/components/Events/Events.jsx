@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import events from '../../constants/events'
 import close from '../../images/assets/close.png'
 
 const Events = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [overlay, setOverlay] = useState('hidden')
   const [event, setEvent] = useState({})
 

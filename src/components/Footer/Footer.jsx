@@ -14,6 +14,10 @@ const Footer = () => {
         ["https://www.linkedin.com/company/tensorioe/?fbclid=PAZXh0bgNhZW0CMTEAAaYRkBakT16ytQ9q6E_0lpo49NCCaEz5WYdnztbNrWV9P37ytK0dTxGNh-c_aem_gy2aLNm2PShqwl1tnZU3kg", linkedin, 'TensorIoe']
     ]
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div className="w-full relative z-20">
             <svg viewBox="0 150 1440 120">
@@ -41,7 +45,7 @@ const Footer = () => {
                         })}
                     </div>
                     <div className="flex flex-col items-center gap-[15px]">
-                        <NavLink to='/'>
+                        <NavLink to='/' onClick={scrollToTop}>
                             <img src={logo} alt="Tensor" height='90px' width='90px' />
                         </NavLink>
                         <a className="flex gap-[10px] text-[18px]" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/IOE,+Thapathali+Campus/@27.6941071,85.3186142,19z/data=!4m6!3m5!1s0x39eb19ae08c068d9:0x475bed1f66d060c!8m2!3d27.6940347!4d85.3188261!16s%2Fm%2F05zhjq0?entry=ttu&g_ep=EgoyMDI0MDkyNC4wIKXMDSoASAFQAw%3D%3D">

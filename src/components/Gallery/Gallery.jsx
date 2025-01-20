@@ -1,7 +1,10 @@
 import galleries from "../../constants/gallery"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const Gallery = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const [overlay, setOverlay] = useState('hidden')
   const [gallery, setGallery] = useState(galleries[0]) // gallery is object containing keys : title, photos
   const [position, setPosition] = useState(0)
