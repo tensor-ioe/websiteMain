@@ -1,9 +1,14 @@
 import {NavLink} from 'react-router-dom'
+import { useEffect } from 'react'
 import placeHolderImage from "../../images/assets/PlaceHolderImage.jpeg"
 import HomeTestimonialsTemplate from "./HomeTestimonialsTemplate"
 import HomeSponsor from './HomeSponsor'
 
 const Home = () => {
+  useEffect(() => { // to scroll to the top of the page when this component is mounted
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="flex flex-col gap-7">
       <div className="homeinfo">
