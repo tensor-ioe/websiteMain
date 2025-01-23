@@ -23,7 +23,7 @@ const App = () => {
                 <Route path="/contact" Component={Contact}></Route>
                 <Route path="/apply" Component={Apply}></Route>
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     )
 }

@@ -15,11 +15,10 @@ const paragraph2='We are Lorem ipsum dolor sit amet, consectetur adipisicing eli
 const About = () => {
   return (
     <>
-    <div className='relative flex flex-col items-center mt-10'>
-        <img className='absolute -z-10 right-0 -top-10 h-AboutBackgroundHeight1 w-AboutBackgroundWidth1' src={AboutBackground1} alt="" />
-        <h1 className=' z-0 text-8xl text-center'>About us</h1>
-        <img className='absolute -z-0 left-0 top-44 h-AboutBackgroundHeight2 w-AboutBackgroundWidth2' src={AboutBackground2} alt="" />
-        
+    <div className='md:relative flex flex-col items-center mt-10'>
+        <img className='absolute -z-10 right-0 -top-10 h-[calc(100vh*0.4)] w-[calc(100vw*0.4)] md:h-[400px] md:w-[300px] lg:h-[500px] lg:w-[400px]' src={AboutBackground1} alt="" />
+        <h1 className=' z-0 text-6xl md:text-8xltext-center text-blue-600'>About us</h1>
+        <img className='absolute -z-0 left-0 top-44 h-[calc(100vh*0.4)] w-[calc(100vw*0.4)] sm:top-32 sm:h-[300px] sm:w-[250px] md:top-20 md:h-[400px] md:w-[300px] lg:top-16 lg:h-[500px] lg:w-[400px]' src={AboutBackground2} alt="" />
         <div className=' z-0 mb-20'>
             <Description heading={heading1} paragraph={paragraph1}></Description>
             <Description heading={heading2} paragraph={paragraph2} reverse={true}></Description>
@@ -31,7 +30,7 @@ const About = () => {
         <h1 className=' z-0 text-6xl text-center font-AboutTeamFontWeight mb-20'>ALUMNI</h1>
         <TeamAlumini TeamList={CurrentTeam}></TeamAlumini>
 
-        <h1 className=' z-0 text-6xl text-center font-AboutTeamFontWeight mb-10'>FREQUENT ASKED QUESTION</h1>
+        {/* <h1 className=' z-0 text-6xl text-center font-AboutTeamFontWeight mb-10'>FREQUENT ASKED QUESTION</h1> */}
         {/* <FrequentQuestion></FrequentQuestion>  */}
     </div></>
   )
