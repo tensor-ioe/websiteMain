@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./contactUsForm.css";
 
 const ContactUsForm = () => {
   const [formData, setFormData] = useState({
@@ -20,16 +19,19 @@ const ContactUsForm = () => {
   };
 
   return (
-    <div className="form-container">
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="form-row">
+    <div className="flex justify-center items-center p-5 w-full">
+      <form
+        className="flex flex-col gap-4 w-full max-w-md bg-white shadow-lg rounded-lg p-6"
+        onSubmit={handleSubmit}
+      >
+        <div className="flex flex-col sm:flex-row gap-4">
           <input
             type="text"
             name="name"
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
-            className="form-input"
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="email"
@@ -37,7 +39,7 @@ const ContactUsForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="form-input"
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <input
@@ -46,16 +48,19 @@ const ContactUsForm = () => {
           placeholder="Subject"
           value={formData.subject}
           onChange={handleChange}
-          className="form-single-input"
+          className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <textarea
           name="message"
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          className="form-textarea"
+          className="w-full h-32 px-4 py-2 border border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <button type="submit" className="form-button">
+        <button
+          type="submit"
+          className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors"
+        >
           Send Message
         </button>
       </form>

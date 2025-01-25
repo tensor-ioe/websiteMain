@@ -1,5 +1,4 @@
 import React from "react";
-import "./contactUsMap.css";
 import mapImage from "../../images/contactUs/mapImage.png";
 
 const ContactUsMap = () => {
@@ -11,9 +10,19 @@ const ContactUsMap = () => {
   };
 
   return (
-    <div className="map-container" onClick={handleMapClick}>
-      <img src={mapImage} alt="Map" className="map-image" />
+    <>
+    <div className="text-4xl md:text-6xl text-center text-blue-600">Find US</div>
+    <div
+      className="cursor-pointer flex justify-center items-center w-full h-64 rounded-lg overflow-hidden shadow-lg border-4 border-blue-500"
+      onClick={handleMapClick}
+    >
+      <img
+        src={mapImage}
+        alt="Map"
+        className="w-full h-full object-cover hover:opacity-90 transition-opacity"
+      />
     </div>
+    </>
   );
 };
 
