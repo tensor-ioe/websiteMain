@@ -14,7 +14,13 @@ module.exports = {
       },
       animation: {
         'change' : 'change 10s linear infinite',
-        'popup' : 'popup .2s forwards'
+        'popup' : 'popup .2s forwards',
+        'topAnim': 'topAnim .5s forwards',
+        'topAnimRev': 'topAnimRev .5s forwards',
+        'midAnim': 'midAnim .5s forwards',
+        'midAnimRev': 'midAnimRev .5s forwards',
+        'botAnim': 'botAnim .5s forwards',
+        'botAnimRev': 'botAnimRev .5s forwards',
       },
       transitionProperty: {
         'hover' : 'all .5s ease'
@@ -37,6 +43,70 @@ module.exports = {
           },
           'to': {
             'transform': 'scale(1)'
+          }
+        },
+        topAnim: {
+          '0%': {
+            'transform': 'translateY(0)'
+          },
+          '50%': {
+            'transform': 'translateY(11px)'
+          },
+          '100%': {
+            'transform': 'translateY(11px) rotate(45deg)'
+          }
+        },
+        topAnimRev: {
+          '0%': {
+            'transform': 'translateY(11px) rotate(45deg)'
+          },
+          '50%': {
+            'transform': 'translateY(11px)'
+          },
+          '100%': {
+            'transform': 'translateY(0)'
+          }
+        },
+        midAnim: {
+          '0%': {
+            'transform': 'scale(1)',
+            'opacity': '1'
+          },
+          '100%': {
+            'transform': 'scale(0)',
+            'opacity': '0'
+          }
+        },
+        midAnimRev: {
+          '0%': {
+            'transform': 'scale(0)',
+            'opacity': '0'
+          },
+          '100%': {
+            'transform': 'scale(1)',
+            'opacity': '1'
+          }
+        },
+        botAnim: {
+          '0%': {
+            'transform': 'translateY(0)'
+          },
+          '50%': {
+            'transform': 'translateY(-11px)'
+          },
+          '100%': {
+            'transform': 'translateY(-11px) rotate(135deg)'
+          }
+        },
+        botAnimRev: {
+          '0%': {
+            'transform': 'translateY(-11px) rotate(135deg)'
+          },
+          '50%': {
+            'transform': 'translateY(-11px)'
+          },
+          '100%': {
+            'transform': 'translateY(0)'
           }
         }
       },
