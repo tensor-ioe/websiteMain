@@ -26,7 +26,7 @@ const HomeTestimonialsTemplate = () => {
             <div ref={divRef} className="scroll-bar w-[90vw] xl:w-width pb-3 mx-auto whitespace-nowrap overflow-y-hidden"> 
                 {testimonies.map((item, index) => {
                     return (
-                        <div key={index} className={`w-[320px] h-[510px] inline-block ${index == testimonies.length - 1 ? "mr-1" : "mr-7"} pt-[75px]`}> {/* no right margin for last element */}
+                        <div key={index} className={`w-[320px] h-[510px] inline-block ${index === testimonies.length - 1 ? "mr-1" : "mr-7"} pt-[75px]`}> {/* no right margin for last element */}
                             <div className="h-[425px] relative pt-[80px] px-5 bg-[#E5EDF2] rounded-2xl shadow-boxShadow">
                                 <img className="w-[150px] h-[150px] rounded-[50%] absolute top-[-75px] left-[85px] object-cover" src={item.PersonImage} alt="personimage" />
                                 <div className="whitespace-normal opacity-65">{item.Testimony}</div>

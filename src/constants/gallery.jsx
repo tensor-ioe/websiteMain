@@ -7,14 +7,14 @@ import hackathon6 from '../images/gallery/Hackathon/sample6.png'
 
 const gallery = [
     {
-        title: 'Hackathon',
+        title: 'HACKATHON',
         photos: [
             hackathon1,
             hackathon2,
         ]
     },
     {
-        title: 'Datathon',
+        title: 'DATATHON',
         photos: [
             hackathon2,
             hackathon1,
@@ -22,7 +22,7 @@ const gallery = [
         ]
     },
     {
-        title: 'Event',
+        title: 'EVENT',
         photos: [
             hackathon3,
             hackathon1,
@@ -31,7 +31,7 @@ const gallery = [
         ]
     },
     {
-        title: 'Event',
+        title: 'EVENT',
         photos: [
             hackathon4,
             hackathon1,
@@ -40,7 +40,7 @@ const gallery = [
         ]
     },
     {
-        title: 'Event',
+        title: 'EVENT',
         photos: [
             hackathon5,
             hackathon1,
@@ -50,7 +50,7 @@ const gallery = [
         ]
     },
     {
-        title: 'Event',
+        title: 'EVENT',
         photos: [
             hackathon6,
             hackathon1,
