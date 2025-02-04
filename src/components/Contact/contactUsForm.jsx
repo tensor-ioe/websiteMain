@@ -31,7 +31,7 @@ const ContactUsForm = () => {
             placeholder="Name"
             value={formData.name}
             onChange={handleChange}
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full sm:w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="email"
@@ -39,7 +39,7 @@ const ContactUsForm = () => {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full sm:w-1/2 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <input

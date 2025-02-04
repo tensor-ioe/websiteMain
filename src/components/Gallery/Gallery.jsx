@@ -16,7 +16,7 @@ const Gallery = () => {
   }
   const handleLeft = () => {
     let no_of_photos = gallery.photos.length - 1
-    position === 0 ? setPosition(no_of_photos)  : setPosition((prevPosition) => prevPosition - 1)
+    position === 0 ? setPosition(no_of_photos) : setPosition((prevPosition) => prevPosition - 1)
   }
 
   const handleRight = () => {
@@ -47,16 +47,20 @@ const Gallery = () => {
       <div className={`w-full h-nonavbarheight bg-[#000000d7] grid place-content-center fixed top-[75px] z-30 ${overlay}`}>
         <div onClick={() => setOverlay('hidden')} className="w-full h-full absolute z-40"></div>
         <div className="mx-auto max-lg:hidden w-[90vw] xl:w-[1050px] h-[75vh] aspect-video flex justify-center relative z-50 rounded-[16px] overflow-hidden animate-popup">
-          <div onClick={handleLeft} className="w-[50px] h-full bg-[#1360A5] text-6xl text-white border-r-4 grid place-content-center cursor-pointer select-none">&lt;</div>
+          <div onClick={handleLeft} className="w-[50px] h-full bg-[#1360A5] text-6xl text-white border-r-4 rounded-l-[16px] grid place-content-center cursor-pointer select-none">&lt;</div>
           <img className="w-[80vw] xl:w-[950px] h-full object-cover" src={gallery.photos[position]} alt="Memories" />
-          <div onClick={handleRight} className="w-[50px] h-full bg-[#1360A5] text-6xl text-white border-l-4 grid place-content-center cursor-pointer select-none">&gt;</div>
+          <div onClick={handleRight} className="w-[50px] h-full bg-[#1360A5] text-6xl text-white border-l-4 rounded-r-[16px] grid place-content-center cursor-pointer select-none">&gt;</div>
         </div>
-        <div className="hidden max-lg:flex w-[80vw] h-[75vh] rounded-3xl p-5 bg-[#898989a6] relative z-50 items-center justify-center flex-wrap gap-5 overflow-scroll">
-          {gallery.photos.map((item, index) => {
-            return ( 
-              <img key={index} className="w-[300px] h-[200px]" src={item} alt="memories"/>
-            )
-          })}
+        {/*for smaller screen devices*/}
+        <div className="hidden max-lg:block w-[80vw] h-[75vh] rounded-3xl bg-[#90C3F6]  relative z-50 overflow-scroll">
+          <h1 className="sticky top-0 max-sm:text-xl max-sm:leading-[60px] text-3xl rounded-t-2xl text-center font-bold leading-[70px] bg-[#1361a5] border-black border-b-4 mb-3">{gallery.title}</h1>
+          <div className="flex items-center justify-center flex-wrap gap-5 p-5 overflow-scroll" >
+            {gallery.photos.map((item, index) => {
+              return (
+                <img key={index} className="border-white border-4 w-[320px] h-[230px]" src={item} alt="memories" />
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>
