@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.62825f4e.css",
-    "main.js": "/static/js/main.bc20a071.js",
-    "static/media/sample6.png": "/static/media/sample6.e5fd63e61568e08af9ef.png",
-    "static/media/sample3.png": "/static/media/sample3.d0ceea2cbf231a0f7fb2.png",
-    "static/media/sample5.png": "/static/media/sample5.ec104b87d6a3d138e6ce.png",
-    "static/media/sample4.png": "/static/media/sample4.c93b61047910ffc4cf87.png",
-    "static/media/sample2.png": "/static/media/sample2.ee61ea2551fed7f63c25.png",
-    "static/media/Person1.jpeg": "/static/media/Person1.c8f92d4811ba76008518.jpeg",
-    "static/media/logo.png": "/static/media/logo.22f16997057d675af2d0.png",
-    "static/media/PlaceHolderImage.jpeg": "/static/media/PlaceHolderImage.73ea08ced56bb8e3bbaa.jpeg",
-    "static/media/AboutImage.png": "/static/media/AboutImage.c386b4fe76ec12d24d48.png",
-    "static/media/sample1.png": "/static/media/sample1.0b2aa9df6e504b4ae9fc.png",
-    "static/media/mapImage.png": "/static/media/mapImage.07c51c8535a60e4c1f1c.png",
-    "static/media/Starbucks.jpeg": "/static/media/Starbucks.01dc69919276bf1d44e2.jpeg",
-    "static/media/GeneralMotors.png": "/static/media/GeneralMotors.c14b3ce0482d03725910.png",
-    "static/media/mail.png": "/static/media/mail.2a92cf7f5e0700ed4bff.png",
-    "index.html": "/index.html",
-    "main.62825f4e.css.map": "/static/css/main.62825f4e.css.map",
-    "main.bc20a071.js.map": "/static/js/main.bc20a071.js.map"
+    "main.css": "/websiteMain/static/css/main.62825f4e.css",
+    "main.js": "/websiteMain/static/js/main.b8ca69b9.js",
+    "static/media/sample6.png": "/websiteMain/static/media/sample6.e5fd63e61568e08af9ef.png",
+    "static/media/sample3.png": "/websiteMain/static/media/sample3.d0ceea2cbf231a0f7fb2.png",
+    "static/media/sample5.png": "/websiteMain/static/media/sample5.ec104b87d6a3d138e6ce.png",
+    "static/media/sample4.png": "/websiteMain/static/media/sample4.c93b61047910ffc4cf87.png",
+    "static/media/sample2.png": "/websiteMain/static/media/sample2.ee61ea2551fed7f63c25.png",
+    "static/media/Person1.jpeg": "/websiteMain/static/media/Person1.c8f92d4811ba76008518.jpeg",
+    "static/media/logo.png": "/websiteMain/static/media/logo.22f16997057d675af2d0.png",
+    "static/media/PlaceHolderImage.jpeg": "/websiteMain/static/media/PlaceHolderImage.73ea08ced56bb8e3bbaa.jpeg",
+    "static/media/AboutImage.png": "/websiteMain/static/media/AboutImage.c386b4fe76ec12d24d48.png",
+    "static/media/sample1.png": "/websiteMain/static/media/sample1.0b2aa9df6e504b4ae9fc.png",
+    "static/media/mapImage.png": "/websiteMain/static/media/mapImage.07c51c8535a60e4c1f1c.png",
+    "static/media/Starbucks.jpeg": "/websiteMain/static/media/Starbucks.01dc69919276bf1d44e2.jpeg",
+    "static/media/GeneralMotors.png": "/websiteMain/static/media/GeneralMotors.c14b3ce0482d03725910.png",
+    "static/media/mail.png": "/websiteMain/static/media/mail.2a92cf7f5e0700ed4bff.png",
+    "index.html": "/websiteMain/index.html",
+    "main.62825f4e.css.map": "/websiteMain/static/css/main.62825f4e.css.map",
+    "main.b8ca69b9.js.map": "/websiteMain/static/js/main.b8ca69b9.js.map"
   },
   "entrypoints": [
     "static/css/main.62825f4e.css",
-    "static/js/main.bc20a071.js"
+    "static/js/main.b8ca69b9.js"
   ]
 }
