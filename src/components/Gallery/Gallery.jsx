@@ -57,7 +57,7 @@ const Gallery = () => {
           <div className="flex items-center justify-center flex-wrap gap-5 p-5 overflow-scroll" >
             {gallery.photos.map((item, index) => {
               return (
-                <img key={index} className="border-white border-4 w-[320px] h-[230px]" src={item} alt="memories" />
+                <img key={index} className="border-white border-4 w-[320px] h-[210px]" src={item} alt="memories" />
               )
             })}
           </div>
