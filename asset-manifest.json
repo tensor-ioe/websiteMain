@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/websiteMain/static/css/main.62825f4e.css",
-    "main.js": "/websiteMain/static/js/main.f847bb17.js",
+    "main.css": "/websiteMain/static/css/main.6276c7ae.css",
+    "main.js": "/websiteMain/static/js/main.bba83079.js",
     "static/media/sample6.png": "/websiteMain/static/media/sample6.e5fd63e61568e08af9ef.png",
     "static/media/sample3.png": "/websiteMain/static/media/sample3.d0ceea2cbf231a0f7fb2.png",
     "static/media/sample5.png": "/websiteMain/static/media/sample5.ec104b87d6a3d138e6ce.png",
@@ -17,11 +17,11 @@
     "static/media/GeneralMotors.png": "/websiteMain/static/media/GeneralMotors.c14b3ce0482d03725910.png",
     "static/media/mail.png": "/websiteMain/static/media/mail.2a92cf7f5e0700ed4bff.png",
     "index.html": "/websiteMain/index.html",
-    "main.62825f4e.css.map": "/websiteMain/static/css/main.62825f4e.css.map",
-    "main.f847bb17.js.map": "/websiteMain/static/js/main.f847bb17.js.map"
+    "main.6276c7ae.css.map": "/websiteMain/static/css/main.6276c7ae.css.map",
+    "main.bba83079.js.map": "/websiteMain/static/js/main.bba83079.js.map"
   },
   "entrypoints": [
-    "static/css/main.62825f4e.css",
-    "static/js/main.f847bb17.js"
+    "static/css/main.6276c7ae.css",
+    "static/js/main.bba83079.js"
   ]
 }
