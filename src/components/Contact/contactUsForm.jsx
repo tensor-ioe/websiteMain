@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import emailjs from "@emailjs/browser";
 
 const ContactUsForm = () => {
@@ -17,28 +18,34 @@ const ContactUsForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const serviceId = "service_ihs7nlu"; 
+    const publicKey = "Xl0YiUrjlLb-iG5rJ"; 
+
+    const tensorTemplateId = "template_c1ghb1t"; // Template ID for Tensor
+    const thankYouTemplateId = "template_gptaq39"; // Template ID for Thank You email
+
+    // Send the original message to Tensor
     emailjs
-      .send(
-        "service_ihs7nlu", // EmailJS service ID
-        "template_c1ghb1t", // EmailJS template ID
-        {
+      .send(serviceId, tensorTemplateId, {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      }, publicKey)
+      .then(() => {
+        // Send a thank-you email to the user
+        return emailjs.send(serviceId, thankYouTemplateId, { 
+          to_email: formData.email,
           from_name: formData.name,
-          from_email: formData.email,
-          subject: formData.subject,
-          message: formData.message,
-        },
-        "Xl0YiUrjlLb-iG5rJ" //EmailJS public key
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.error("FAILED...", error);
-          alert("Failed to send message.");
-        }
-      );
+        }, publicKey);
+      })
+      .then(() => {
+        alert("Message sent successfully! You will receive a confirmation email soon.");
+      })
+      .catch((error) => {
+        console.error("FAILED...", error);
+        alert("Failed to send message.");
+      });
   };
 
   return (
