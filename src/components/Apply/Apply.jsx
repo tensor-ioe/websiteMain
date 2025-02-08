@@ -1,5 +1,5 @@
 import React from "react";
-import ApplyForm from "./ApplyForm";
+import ApplyForm from "./applyForm";
 import axios from "axios";
 
 export default function Apply() {

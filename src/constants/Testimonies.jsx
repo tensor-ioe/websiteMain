@@ -1,4 +1,4 @@
-import image from "../images/members/Person1.jpeg"
+import image from "../images/members/khemraj.jpg"
 
 const Testimonies=[
     {PersonImage : image,
