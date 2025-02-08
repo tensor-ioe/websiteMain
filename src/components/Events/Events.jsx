@@ -19,9 +19,9 @@ const Events = () => {
     <div className='overflow-hidden relative'>
       <div className={` w-[100vw] px-5 xl:px-0 xl:w-width xl:mx-auto pt-10 mb-10 relative z-0`}>
         {/* blob-1 */}
-        <div className="max-sm:w-[400px] max-sm:h-[400px] w-[500px] h-[500px] bg-[#90C3F6] absolute  top-[-10%] left-[-20%] rounded-customborder animate-change"></div>
+        <div className="max-sm:w-[400px] max-sm:h-[400px] w-[450px] h-[450px] bg-[#90C3F6] absolute  top-[-10%] left-[-20%] rounded-customborder animate-change"></div>
         {/* blob-2 */}
-        <div className="max-sm:w-[400px] max-sm:h-[400px] w-[500px] h-[500px] bg-[#90C3F6] absolute bottom-[-10px] right-[-25%] rounded-customborder animate-change"></div>
+        <div className="max-sm:w-[400px] max-sm:h-[400px] w-[450px] h-[450px] bg-[#90C3F6] absolute bottom-[-10px] right-[-25%] rounded-customborder animate-change"></div>
         {/* Begining of event page  */}
         <h1 className='text-4xl font-extrabold text-center mb-7 relative'>EVENTS</h1>
         <div className="flex items-center justify-center md:justify-between flex-wrap gap-10">
