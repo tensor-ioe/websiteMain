@@ -12,7 +12,8 @@ const ApplyForm = ({ apiKey }) => {
   const [question2, setQuestion2] = useState("");
   const [question3, setQuestion3] = useState("");
   const [feedbacks, setFeedbacks] = useState("");
-  const [positions, setPositions] = useState([]);
+  // const [positions, setPositions] = useState([]);
+  const [position, setPosition] = useState("");
   const [disableInput, setDisableInput] = useState(false);
 
   const handlePositions = (e) => {
@@ -21,24 +22,26 @@ const ApplyForm = ({ apiKey }) => {
     // console.log(positions.length);
     const { name, checked } = e.target;
 
-    setPositions((prevPositions) => {
-      if (checked) {
-        if (positions.length >= 2) {
-          setDisableInput(true);
-        } else {
-          setDisableInput(false);
-        }
-        return [...prevPositions, name];
-      } else {
-        return prevPositions.filter((position) => position != name);
-      }
-    });
+    // setPositions((prevPositions) => {
+    //   if (checked) {
+    //     if (positions.length >= 2) {
+    //       // setDisableInput(true);
+    //     } else {
+    //       // setDisableInput(false);
+    //     }
+    //     return [...prevPositions, name];
+    //   } else {
+    //     return prevPositions.filter((position) => position != name);
+    //   }
+    // });
+    setPosition(name);
   };
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     // positions.pop();
-    const appliedPositions = positions.toString();
+    // const appliedPositions = positions.toString();
+    const appliedPositions = position.toString();
     const data = {
       Name: name,
       Email: email,
@@ -51,8 +54,13 @@ const ApplyForm = ({ apiKey }) => {
         question3,
       Feedbacks: feedbacks,
     };
+    console.log(data);
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbwdb5AdD9hlBOTtkDycBXoBdOQYUyF02cTIp-d8fW1HTK2x27Kkh8vdNHcF93b4iDvkBw/exec";
     try {
-      await axios.post(`https://sheet.best/api/sheets/${apiKey}`, data);
+      await axios.post(scriptURL, data, {
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+      });
       navigate("success");
     } catch (error) {
       console.log(error);
@@ -116,12 +124,12 @@ const ApplyForm = ({ apiKey }) => {
             className=" mt-1 mb-2 text-left font-medium"
           >
             Which role are you intrested in ? <br />{" "}
-            <i>Check the box according to your priority order (Maximum 3). </i>
+            {/* <i>Check the box according to your priority order (Maximum 3). </i> */}
           </label>
           <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
-              type="checkbox"
+              type="radio"
               name="Research Advocate"
               onChange={handlePositions}
               disabled={disableInput}
@@ -133,6 +141,18 @@ const ApplyForm = ({ apiKey }) => {
           <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
+              type="radio"
+              name="Research Advocate"
+              onChange={handlePositions}
+              disabled={disableInput}
+            />
+            <label className=" ml-1" htmlFor="checkboxLabel">
+              Jr. Research Advocate
+            </label>
+          </span>
+          {/* <span className=" flex justify-center my-1 self-start">
+            <input
+              className=" w-5 h-5"
               type="checkbox"
               name="Software Coordinator"
               onChange={handlePositions}
@@ -141,8 +161,8 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               Software Coordinator
             </label>
-          </span>
-          <span className=" flex justify-center my-1 self-start">
+          </span> */}
+          {/* <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
               type="checkbox"
@@ -153,8 +173,8 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               Web Developer
             </label>
-          </span>
-          <span className=" flex justify-center my-1 self-start">
+          </span> */}
+          {/* <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
               type="checkbox"
@@ -165,8 +185,8 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               Event Manager
             </label>
-          </span>
-          <span className=" flex justify-center my-1 self-start">
+          </span> */}
+          {/* <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
               type="checkbox"
@@ -177,8 +197,8 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               Graphics Designer
             </label>
-          </span>
-          <span className=" flex justify-center my-1 self-start">
+          </span> */}
+          {/* <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
               type="checkbox"
@@ -189,8 +209,8 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               Social media Manager
             </label>
-          </span>
-          <span className=" flex justify-center my-1 self-start">
+          </span> */}
+          {/* <span className=" flex justify-center my-1 self-start">
             <input
               className=" w-5 h-5"
               type="checkbox"
@@ -201,7 +221,7 @@ const ApplyForm = ({ apiKey }) => {
             <label className=" ml-1" htmlFor="checkboxLabel">
               General Member
             </label>
-          </span>
+          </span> */}
           <label
             htmlFor="question1"
             className=" my-2 md:mt-4 text-left font-medium"

@@ -1,8 +1,8 @@
 import { React, useState } from "react";
-import "./Apply.css";
+import ApplyForm from "./applyForm";
 
 export default function Apply() {
-  const applicationClosed = true;
+  const applicationClosed = false;
   return (
     <div className="Apply">
       <section className="Apply-section">
