@@ -30,7 +30,7 @@ const Events = () => {
               // wrapping a function with args into another anonymous function, to execute only when clicked as '()' executes a function immediately
               <div key={index} onClick={() => handleClickEvent(item)} className="group w-[300px] xl:w-[350px] aspect-[4/3] rounded-xl shadow-boxShadow relative overflow-hidden hover:cursor-pointer">
                 <img className='w-full h-full object-fill rounded-xl transition-all group-hover:scale-110' src={item.eventImage} alt="memories" />
-                <div className="w-full h-full rounded-xl bg-[#1360A5AB] grid place-content-center text-3xl font-semibold uppercase text-white absolute top-0 transition-all group-hover:text-4xl group-hover:bg-[#00000099]">
+                <div className="w-full h-full rounded-xl bg-[#1361a5d9] grid place-content-center max-md:text-2xl text-3xl font-semibold uppercase text-center text-white absolute top-0 transition-all group-hover:text-4xl group-hover:max-md:text-3xl group-hover:bg-[#00000099]">
                   {item.title}
                 </div>
               </div>

@@ -1,44 +1,44 @@
-import image1 from '../images/gallery/Hackathon/sample1.png'
-import image2 from '../images/gallery/Hackathon/sample2.png'
-import image3 from '../images/gallery/Hackathon/sample3.png'
-import image4 from '../images/gallery/Hackathon/sample4.png'
-import image5 from '../images/gallery/Hackathon/sample5.png'
-import image6 from '../images/gallery/Hackathon/sample6.png'
+import machineLearning from '../images/gallery/Machine Learning Workshop/cover.jpg'
+import dataUnleashed from '../images/gallery/Data Unleashed/1.png'
+import docker from '../images/gallery/Docker/cover.png'
+import pythonAutomation from '../images/gallery/Python Automation/cover.png'
+import webDevelopment from '../images/gallery/Web Development/cover.jpg'
+import uiuxDesign from '../images/gallery/UI UX Design/cover.jpg'
 
 const events = [
     {   
-        eventImage: image1,
-        title : 'HACKATHON',
+        eventImage: machineLearning,
+        title : 'Machine Learning',
+        date : '15th Jan - 21th Jan 2025',
+        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
+    },
+    {
+        eventImage: dataUnleashed,
+        title : 'Data Unleashed',
         date : '21th July - 25th July 2024',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
     },
     {
-        eventImage: image2,
-        title : 'DATATHON',
+        eventImage: docker,
+        title : 'Docker',
         date : '21th July - 25th July 2024',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
     },
     {
-        eventImage: image3,
-        title : 'EVENT',
+        eventImage: pythonAutomation,
+        title : 'Python Automation',
         date : '21th July - 25th July 2024',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
     },
     {
-        eventImage: image4,
-        title : 'EVENT',
+        eventImage: webDevelopment,
+        title : 'Web Development',
         date : '21th July - 25th July 2024',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
     },
     {
-        eventImage: image5,
-        title : 'EVENT',
-        date : '21th July - 25th July 2024',
-        description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
-    },
-    {
-        eventImage: image6,
-        title : 'EVENT',
+        eventImage: uiuxDesign,
+        title : 'UI UX Design',
         date : '21th July - 25th July 2024',
         description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis id perferendis modi molestias aliquam expedita praesentium sit sint autem, dicta assumenda eos velit itaque facilis quas esse? Animi, harum!'
     }

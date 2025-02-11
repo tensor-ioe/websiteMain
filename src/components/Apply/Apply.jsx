@@ -1,6 +1,6 @@
 import React from "react";
 import ApplyForm from "./applyForm";
-import axios from "axios";
+// import axios from "axios";
 
 export default function Apply() {
   const applicationClosed = true; // Set this to false to test the form.
