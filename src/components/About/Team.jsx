@@ -11,7 +11,7 @@ const Team = () => {
 
   return (
     <>
-      <div className={`w-full ${loadMore ? "h-full" : "max-md:h-[1100px] h-[370px] xl:h-[400px]"} flex items-center justify-around md:justify-between flex-wrap gap-7 relative overflow-hidden`}>
+      <div className={`w-full ${loadMore ? "h-full" : "max-md:h-[1110px] h-[370px] xl:h-[400px]"} flex items-center justify-around md:justify-between flex-wrap gap-7 relative overflow-hidden`}>
         {CurrentTeam.map((item, index) => {
           return (
             <div key={index} className="w-[270px] lg:w-[300px] xl:w-[350px] h-[350px] lg:h-[400px] rounded-xl bg-[#90C3F6]">

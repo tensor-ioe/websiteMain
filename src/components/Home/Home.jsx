@@ -2,7 +2,7 @@ import {NavLink} from 'react-router-dom'
 import { useEffect } from 'react'
 import placeHolderImage from "../../images/assets/PlaceHolderImage.jpeg"
 import HomeTestimonialsTemplate from "./HomeTestimonialsTemplate"
-import HomeSponsor from './HomeSponsor'
+// import HomeSponsor from './HomeSponsor'
 
 const Home = () => {
   useEffect(() => { // to scroll to the top of the page when this component is mounted
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div>
       <HomeTestimonialsTemplate />
-      <HomeSponsor />
+      {/* <HomeSponsor /> */}
     </div>
   )
 }

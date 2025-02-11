@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import AboutImage from '../../images/assets/AboutImage.png'
 import Team from './Team'
 import TeamAlumni from './TeamAlumni'
@@ -9,6 +10,10 @@ const whatistensor = 'We are Lorem ipsum dolor sit amet, consectetur adipisicing
 const titlehead = 'We are Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nulla quidem pariatur nihil, maxime possimus dolorum beatae a ipsa quaerat eligendi nobis. Id voluptas nihil, repellat modi cum nulla eius! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore suscipit pariatur dicta expedita consequatur dolorum repudiandae, officia distinctio, consectetur quos repellat illo perspiciatis maiores, minus repellendus. Accusamus blanditiis laborum assumenda?';
 
 const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <div className="overflow-hidden relative">
@@ -33,11 +38,11 @@ const About = () => {
               <p className='leading-7 max-md:px-5 text-justify'>{titlehead}</p>
             </div>
           </div>
-        <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">CURRENT TEAM</h1>
-        <Team />
+          <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">CURRENT TEAM</h1>
+          <Team />
 
-        <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">ALUMNI</h1>
-        <TeamAlumni />
+          <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">ALUMNI</h1>
+          <TeamAlumni />
         </div>
         {/* <h1 className=' z-0 text-6xl text-center font-AboutTeamFontWeight mb-10'>FREQUENT ASKED QUESTION</h1> */}
         {/* <FrequentQuestion></FrequentQuestion>  */}
