@@ -23,7 +23,7 @@ const About = () => {
           {/* blob-2 */}
           <div className="max-sm:w-[300px] max-sm:h-[300px] w-[400px] h-[400px] bg-[#90C3F6] absolute lg:-bottom-[10px] bottom-[-10px] right-[-15%] rounded-customborder animate-change"></div>
           {/* Begining of About us page  */}
-          <h1 className='text-4xl font-extrabold text-center mb-10 text-blue-600 relative'>ABOUT US</h1>
+          <h1 className='text-4xl font-extrabold text-center mb-10 relative'>ABOUT US</h1>
           <div className='w-full relative flex items-center max-md:flex-col gap-10 mb-12'>
             <img className='w-1/3 max-md:w-1/2 md:h-[210px] lg:h-[240px] xl:h-[270px] rounded-2xl' src={AboutImage} alt="" />
             <div className='w-auto flex flex-col gap-5'>
