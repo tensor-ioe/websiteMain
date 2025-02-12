@@ -56,7 +56,7 @@ const ApplyForm = ({ apiKey }) => {
     };
     console.log(data);
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbwdb5AdD9hlBOTtkDycBXoBdOQYUyF02cTIp-d8fW1HTK2x27Kkh8vdNHcF93b4iDvkBw/exec";
+      "https://script.google.com/macros/s/AKfycbzjA9m6iozvJ4hR8PXotJ9Vcp2VRjQd2XwDdgdDR4snDY3HEFZurCquT08aWo3O1X8ZGA/exec";
     try {
       await axios.post(scriptURL, data, {
         headers: { "Content-Type": "text/plain;charset=utf-8" },
