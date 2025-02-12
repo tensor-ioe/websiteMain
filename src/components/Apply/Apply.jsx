@@ -1,23 +1,21 @@
-import React from "react";
+import { React, useState } from "react";
 import ApplyForm from "./applyForm";
-// import axios from "axios";
 
 export default function Apply() {
-  const applicationClosed = true; // Set this to false to test the form.
-
+  const applicationClosed = false;
   return (
     <div className="Apply">
       <section className="Apply-section">
         <div className="Apply-content">
           {applicationClosed ? (
-            <div className="Apply-closed flex flex-col items-center justify-center text-center">
-              <p className="Apply-closed-icon text-6xl mb-4">:(</p>
-              <p className="Apply-closed-text text-lg font-semibold">
-                Application for this year has been closed.
+            <div className="Apply-closed">
+              <p className="Apply-closed-icon">:(</p>
+              <p className="Apply-closed-text">
+                Application for this year has been closed
               </p>
             </div>
           ) : (
-            <div className="Apply-form p-4 flex flex-col items-center">
+            <div className="Apply-form p-2 flex flex-col">
               <ApplyForm apiKey={process.env.REACT_APP_SPREADSHEET_API_KEY} />
             </div>
           )}
