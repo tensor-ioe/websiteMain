@@ -32,7 +32,7 @@ const Home = () => {
           <img className='max-sm:w-[180px] md:w-[300px] xl:w-[400px] max-sm:h-[150px] h-[175px]' src={placeHolderImage} alt="placeholderimg" />
           <div>
             <h1 className='max-md:text-base md:text-xl text-4xl font-bold'>What is <span className='text-blue-900'>Tensor?</span></h1>
-            <div className="max-md:w-full max-sm:text-xs md:text-sm md:w-[400px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolores exercitationem eos molestiae cupiditate, ea facere impedit debitis delectus. Soluta eaque blanditiis sapiente asperiores. Illo dolore maiores quisquam tempore reiciendis.</div>
+            <div className="max-md:w-full max-sm:text-xs md:text-sm md:w-[400px]">Tensor is the official data science and artificial intelligence club of IOE Thapathali Campus, dedicated to fostering innovation, research, and learning in AI, machine learning, and data-driven technologies.</div>
           </div>
         </div>
       </div>
