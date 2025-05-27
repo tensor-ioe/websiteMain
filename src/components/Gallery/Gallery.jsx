@@ -47,9 +47,28 @@ const Gallery = () => {
       <div className={`w-full h-nonavbarheight bg-[#000000d7] grid place-content-center fixed top-[75px] z-30 ${overlay}`}>
         <div onClick={() => setOverlay('hidden')} className="w-full h-full absolute z-40"></div>
         <div className="mx-auto max-lg:hidden w-[90vw] xl:w-[1050px] h-[75vh] aspect-video flex items-center justify-center relative z-50 rounded-[16px] overflow-hidden animate-popup">
-          <div onClick={handleLeft} className="w-[50px] h-[50px] bg-[#1360A5] text-5xl text-white border-4 rounded-full grid place-content-center cursor-pointer select-none">&lt;</div>
-          <img className="w-[80vw] xl:w-[950px] h-full object-contain" src={gallery.photos[position]} alt="Memories" />
-          <div onClick={handleRight} className="w-[50px] h-[50px] bg-[#1360A5] text-5xl text-white border-4 rounded-full grid place-content-center cursor-pointer select-none">&gt;</div>
+          <div onClick={() => setOverlay('hidden')} className="w-[50px] h-full flex items-center justify-center">
+            <div className="w-[50px] h-[50px] bg-[#1360A5] text-5xl text-white border-4 rounded-full grid place-content-center cursor-pointer select-none" onClick={(event) => {
+              event.stopPropagation();
+              handleLeft()
+            }} >
+              &lt;
+            </div>
+          </div>
+          <div className="w-[80vw] xl:w-[950px] h-full flex items-center justify-center" onClick={() => setOverlay('hidden')}>
+            <img className="h-full object-contain" src={gallery.photos[position]} alt="Memories" onClick={(event) => {
+              event.stopPropagation() // prevents parent's function; onClick to execute
+              setOverlay('block')
+            }} />
+          </div>
+          <div onClick={() => setOverlay('hidden')} className="w-[50px] h-full flex items-center justify-center">
+            <div className="w-[50px] h-[50px] bg-[#1360A5] text-5xl text-white border-4 rounded-full grid place-content-center cursor-pointer select-none" onClick={(event) => {
+              event.stopPropagation();
+              handleLeft()
+            }} >
+              &gt;
+            </div>
+          </div>
         </div>
         {/*for smaller screen devices*/}
         <div className="hidden max-lg:block w-[80vw] h-[75vh] rounded-3xl bg-[#90C3F6]  relative z-50 overflow-scroll">
