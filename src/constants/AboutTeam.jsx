@@ -12,6 +12,9 @@ import pankaj from '../images/members/Pankaj.jpg'
 import avignya from '../images/members/Avignya.jpg'
 import ruby from '../images/members/Ruby.jpg'
 import balram from '../images/members/Balram.png'
+import biraj from '../images/members/Biraj.jpg'
+import dheeraj from '../images/members/Dheeraj.jpg'
+import sandesh from '../images/members/Sandesh.jpg'
 import kashmir from '../images/members/Kashmir.jpg'
 
 const CurrentTeam = [
@@ -36,19 +39,9 @@ const CurrentTeam = [
         Role: "Lead Research Advocate"
     },
     {
-        Image: jatin,
-        Name: "Jatin Raut",
-        Role: "Lead Graphics Designer"
-    },
-    {
         Image: yugal,
         Name: "Yugal Nyoupane",
         Role: "Lead Software Coordinator"
-    },
-    {
-        Image: avinash,
-        Name: "Avinash Joshi",
-        Role: "Event Manager"
     },
     {
         Image: Shreya,
@@ -66,14 +59,24 @@ const CurrentTeam = [
         Role: "Social Media Manager"
     },
     {
-        Image: pankaj,
-        Name: "Pankaj Kumar Mehta",
-        Role: "Research Advocate"
-    },
-    {
         Image: avignya,
         Name: "Avignya Gautam",
         Role: "Research Advocate"
+    },
+    {
+        Image: biraj,
+        Name: "Biraj Rijal",
+        Role: "Junior Research Advocate"
+    },
+    {
+        Image: dheeraj,
+        Name: "Dhiraj Jung Pandey",
+        Role: "Junior Research Advocate"
+    },
+    {
+        Image: sandesh,
+        Name: "Sandesh Kandel",
+        Role: "Junior Research Advocate"
     },
     {
         Image: ruby,
