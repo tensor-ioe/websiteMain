@@ -27,9 +27,9 @@ const HomeTestimonialsTemplate = () => {
                 {testimonies.map((item, index) => {
                     return (
                         <div key={index} className={`w-[320px] h-[510px] inline-block ${index === testimonies.length - 1 ? "mr-1" : "mr-7"} pt-[75px]`}> {/* no right margin for last element */}
-                            <div className="h-[425px] relative pt-[80px] px-5 bg-[#E5EDF2] rounded-2xl shadow-boxShadow">
+                            <div className="h-[425px] relative pt-[85px] px-5 bg-[#E5EDF2] rounded-2xl shadow-boxShadow">
                                 <img className="w-[150px] h-[150px] rounded-[50%] absolute top-[-75px] left-[85px] object-cover" src={item.PersonImage} alt="personimage" />
-                                <div className="whitespace-normal opacity-65">{item.Testimony}</div>
+                                <div className="w-[280px] h-[264px] whitespace-normal opacity-65 text-center italic">{item.Testimony}</div>
                                 <h1 className="text-center text-xl font-bold">{item.Name}</h1>
                                 <h1 className="text-center text-xl opacity-65">{item.Role}</h1>
                             </div>

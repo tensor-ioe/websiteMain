@@ -64,7 +64,7 @@ const Gallery = () => {
           <div onClick={() => setOverlay('hidden')} className="w-[50px] h-full flex items-center justify-center">
             <div className="w-[50px] h-[50px] bg-[#1360A5] text-5xl text-white border-4 rounded-full grid place-content-center cursor-pointer select-none" onClick={(event) => {
               event.stopPropagation();
-              handleLeft()
+              handleRight()
             }} >
               &gt;
             </div>

@@ -15,7 +15,7 @@ const TeamAlumni = () => {
         {Alumni.map((item, index) => {
           return (
             <div key={index} className="w-[270px] lg:w-[300px] xl:w-[350px] h-[350px] lg:h-[400px]">
-              <img className='rounded-xl object-fill mb-[10px]' src={item.Image} alt="memories" />
+              <img className='xl:w-[350px] xl:h-[325px] lg:w-[300px] lg:h-[278.5px] w-[270px] h-[250.5px] rounded-xl object-cover mb-[10px]' src={item.Image} alt="memories" />
               <div className='text-center text-3xl font-bold'>{item.Name}</div>
               <div className='text-center text-xl'>{item.Role}</div>
             </div>
