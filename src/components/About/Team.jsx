@@ -1,16 +1,19 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import CurrentTeam from '../../constants/AboutTeam'
 import arrow from '../../images/assets/AboutTeamArrow.png'
 
 const Team = () => {
+  const currentTeam = useRef(null) // create ref
   const [loadMore, setLoadMore] = useState(false)
   const handleLoadMore = () => {
+    currentTeam.current?.scrollIntoView() 
     setLoadMore((prev) => !prev)
   }
 
   return (
     <>
+      <h1 ref={currentTeam} className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">CURRENT TEAM</h1>
       <div className={`w-full ${loadMore ? "h-full" : "max-md:h-[1110px] h-[370px] xl:h-[400px]"} flex items-center justify-around md:justify-between flex-wrap gap-7 relative overflow-hidden`}>
         {CurrentTeam.map((item, index) => {
           return (

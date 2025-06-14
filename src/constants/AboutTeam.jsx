@@ -51,6 +51,11 @@ const CurrentTeam = [
         Role: "Social Media Manager"
     },
     {
+        Image: images['Pankaj'],
+        Name: "Pankaj Kumar Mehta",
+        Role: "Research Advocate"
+    },
+    {
         Image: images['Avignya'],
         Name: "Avignya Gautam",
         Role: "Research Advocate"

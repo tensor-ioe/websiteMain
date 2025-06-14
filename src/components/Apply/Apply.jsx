@@ -1,7 +1,10 @@
-import { React, useState } from "react";
+import { React, useEffect } from "react";
 import ApplyForm from "./applyForm";
 
 export default function Apply() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const applicationClosed = false;
   return (
     <div className="Apply">
