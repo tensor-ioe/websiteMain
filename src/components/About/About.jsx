@@ -38,10 +38,7 @@ const About = () => {
               <p className='leading-7 max-md:px-5 text-justify'>{titlehead}</p>
             </div>
           </div>
-          <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">CURRENT TEAM</h1>
           <Team />
-
-          <h1 className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">ALUMNI</h1>
           <TeamAlumni />
         </div>
         {/* <h1 className=' z-0 text-6xl text-center font-AboutTeamFontWeight mb-10'>FREQUENT ASKED QUESTION</h1> */}

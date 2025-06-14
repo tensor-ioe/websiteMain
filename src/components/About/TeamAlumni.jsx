@@ -1,16 +1,19 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Alumni from '../../constants/alumni'
 import arrow from '../../images/assets/AboutTeamArrow.png'
 
 const TeamAlumni = () => {
+  const alumni = useRef(null)
   const [loadMore, setLoadMore] = useState(false)
   const handleLoadMore = () => {
+    alumni.current?.scrollIntoView() 
     setLoadMore((prev) => !prev)
   }
 
   return (
     <>
+      <h1 ref={alumni} className="relative text-4xl md:text-5xl font-extrabold text-center mb-10">ALUMNI</h1>
       <div className={`w-full ${loadMore ? "h-full" : "max-md:h-[1100px] h-[370px] xl:h-[400px]"} flex items-center justify-around md:justify-between flex-wrap gap-7 relative overflow-hidden`}>
         {Alumni.map((item, index) => {
           return (

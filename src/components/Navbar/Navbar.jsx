@@ -37,7 +37,7 @@ function Navbar() {
             <div className={`w-[100vw] bg-white absolute z-10 ${toggle ? 'top-[101%]' : 'top-[-350%]'} duration-500 xl:hidden`}>
                 {pages.map((page, index) => {
                     return (
-                        <NavLink key={index} className={
+                        <NavLink key={index} onClick={() => setToggle((prev) => !prev)} className={
                             `text-[14px] no-underline px-[14px] py-[14px] flex flex-row justify-center hover:opacity-100
                                 ${(index === (pages.length - 1)) ? `opacity-100 bg-applybgcolor` : 'opacity-55'}
                                 `
